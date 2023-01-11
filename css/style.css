@@ -1,0 +1,16 @@
+html{
+    font-size: 16px;
+    box-model: border-box;
+    background-color: #5DB0F0;
+}
+
+body{
+    border: solid 2px black;
+    border-radius: 5%;
+    margin: 10%;
+    background-color: #C70039;
+}
+
+.margin{
+    margin: 10%;
+}
