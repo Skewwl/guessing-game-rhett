@@ -17,6 +17,7 @@ if (person === null) {
 let correctAnswers = 0;
 
 // Question 1
+function Q1 (){
 let a1 = prompt(person + " would you say that it is better to meet me like this more than in real life?")
 
 if (a1 === 'Yes' || a1 === 'Y' || a1 === 'No' || a1 === 'N'){
@@ -31,6 +32,7 @@ if (a1 === 'Yes' || a1 === 'Y'){
     alert(person + ' is correct. I would rather meet him/her in person too.');
     correctAnswers++;
 }
+}
 
 // if (a1 === 'Yes' || a1 === 'Y'){
 //     console.log(person + ' I am sorry but you are wrong. It is better to meet in real life.');
@@ -39,6 +41,7 @@ if (a1 === 'Yes' || a1 === 'Y'){
 // }
 
 // Question 2
+function Q2 (){
 let a2 = prompt(person + " would you say that I am the coolest person on the planet?")
 
 if (a2 === 'Yes' || a2 === 'Y' || a2 === 'No' || a2 === 'N'){
@@ -53,7 +56,7 @@ if (a2 === 'Yes' || a2 === 'Y'){
 } else if (a2 === 'No' || a2 === 'N'){
     alert(person + ' you should know better. I am very very cool');
 }
-
+}
 // if (a2 === 'Yes' || a2 === 'Y'){
 //     console.log(person + ' you are totally right.');
 // } else if (a2 === 'No' || a2 === 'N'){
@@ -61,6 +64,7 @@ if (a2 === 'Yes' || a2 === 'Y'){
 // }
 
 // Question 3
+function Q3 (){
 let a3 = prompt("My best friend " + person + ", do you think that I lived in Los Angeles for most of my twenties?")
 
 if (a3 === 'Yes' || a3 === 'Y' || a3 === 'No' || a3 === 'N'){
@@ -75,7 +79,7 @@ if (a3 === 'Yes' || a3 === 'Y'){
 } else if (a3 === 'No' || a3 === 'N'){
     alert(person + ", I don't know how to break this one to you... But you're wrong.");
 }
-
+}
 // if (a3 === 'Yes' || a3 === 'Y'){
 //     console.log(person + ' you aced it! I lived there para muchos anos.');
 // } else if (a3 === 'No' || a3 === 'N'){
@@ -83,6 +87,7 @@ if (a3 === 'Yes' || a3 === 'Y'){
 // }
 
 // Question 4
+function Q4 (){
 let a4 = prompt("Not many questions left, do you think I am from Seattle?")
 
 if (a4 === 'Yes' || a4 === 'Y' || a4 === 'No' || a4 === 'N'){
@@ -97,6 +102,7 @@ if (a4 === 'Yes' || a4 === 'Y'){
 } else if (a4 === 'No' || a4 === 'N'){
     alert(person + " you were so close but totally wrong!");
 }
+}
 
 // if (a4 === 'Yes' || a4 === 'Y'){
 //     console.log(person + ' you knocked that one out of the park.');
@@ -105,6 +111,7 @@ if (a4 === 'Yes' || a4 === 'Y'){
 // }
 
 // Question 5
+function Q5 (){
 let a5 = prompt("Would you guess that the darkness of Seattle is my ally? Before you answer I want you to know that I did not merely adopt the darkness but I was born in it, molded by it.")
 
 if (a5 === 'Yes' || a5 === 'Y' || a5 === 'No' || a5 === 'N'){
@@ -119,6 +126,13 @@ if (a5 === 'Yes' || a5 === 'Y'){
     alert(person + " you are absolutely correct Seattle weather ruins my life everyday. Please help me escape");
     correctAnswers++;
 }
+}
+
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
 
 // if (a5 === 'Yes' || a5 === 'Y'){
 //     console.log(person + " you are wrong, Seattle weather is nobody's ally.");
