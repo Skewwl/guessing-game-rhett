@@ -126,7 +126,7 @@ if (a5 === 'Yes' || a5 === 'Y'){
 //     console.log(person + " you are absolutely correct Seattle weather ruins my life everyday. Please help me escape");
 // }
 
-alert('For this next question please only use numbers.')
+alert('For this next question please only use numbers. You will get four attempts to guess the correct answer.')
 // Question 6
 let guess = 0;
 let response = [];
@@ -151,7 +151,7 @@ if (guess === 4) {
     alert('Dang you actually used all of your guesses. But let me tell you the answer: My favorite movie list has 10 movies listed on it.')
 }
 
-alert('On to the next question! Do your best to guess what any one of my three favorite animals are. Please only use lowercase in your guesses and do not make the animal plural.');
+alert('On to the next question! Do your best to guess what any one of my three favorite animals are. Please only use lowercase in your guesses and do not make the animal plural. You will get six attempts.');
 
 // Does break work outside of switch functions?
 // Question 7
