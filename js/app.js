@@ -147,6 +147,7 @@ let response = [];
 
 //Below I was surprosed to see the && operator was needed, not ||
 // While the user guess # is less than 4 or user response != 10 
+function Q6 (){
 while(guess < 4 && parseInt(response[response.length - 1]) !== 10){
     response[response.length] = prompt('Guess how many movies are on my favorite movies list presented on this website.');
       if (parseInt(response[response.length - 1]) > 10){
@@ -160,7 +161,8 @@ while(guess < 4 && parseInt(response[response.length - 1]) !== 10){
         correctAnswers++;
     };
 };
-
+}
+Q6();
 if (guess === 4) {
     alert('Dang you actually used all of your guesses. But let me tell you the answer: My favorite movie list has 10 movies listed on it.')
 }
@@ -172,6 +174,7 @@ alert('On to the next question! Do your best to guess what any one of my three f
 let attempts = 0;
 let rightAnswers = ['cat', 'duck', 'goldfish'];
 let promptValue;
+function Q7 (){
 while (attempts < 6 && promptValue !== rightAnswers[0] && promptValue !== rightAnswers[1] && promptValue !== rightAnswers[2]){
     promptValue = prompt('What do you think is one of my three favorite animals?');
         switch (rightAnswers[0] || rightAnswers[1] || rightAnswers[2]){
@@ -188,4 +191,6 @@ while (attempts < 6 && promptValue !== rightAnswers[0] && promptValue !== rightA
                 }
         }
 }
+};
+Q7();
 alert(`This concludes the guessing game. You scored ${correctAnswers} out of 7.`);
