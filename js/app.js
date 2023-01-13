@@ -20,7 +20,7 @@ let correctAnswers = 0;
 function Q1 (){
 let a1 = prompt(person + " would you say that it is better to meet me like this more than in real life?")
 
-if (a1 === 'Yes' || a1 === 'Y' || a1 === 'No' || a1 === 'N'){
+if (a1.toLowerCase() === 'yes' || a1.toLowerCase() === 'y' || a1.toLowerCase() === 'no' || a1.toLowerCase() === 'n'){
     alert('Thank you very much for answering appropriately.');
 } else {
     alert('I think that you may have typed your response in wrong. Please refresh the browser and start over.');
@@ -156,13 +156,16 @@ while(guess < 4 && parseInt(response[response.length - 1]) !== 10){
     } else if (parseInt(response[response.length - 1]) < 10){
         alert('Your guess was too low. Try again');
         guess = guess + 1;
-    } else {
+    } else if (parseInt(response[response.length - 1]) === 10){  
         alert('Amazing! You guessed it!');
         correctAnswers++;
+    } else {
+        alert('Invalid input you get a free redo. Use a number please.');
     };
 };
 }
 Q6();
+
 if (guess === 4) {
     alert('Dang you actually used all of your guesses. But let me tell you the answer: My favorite movie list has 10 movies listed on it.')
 }
